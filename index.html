@@ -18,7 +18,7 @@
   <div class="container m-3" id="app">
     <h2 class="text-center mb-3">Generatore di email</h2>
     <div class="row justify-content-center">
-      <div v-if="isLoaded" class="col-7">
+      <div v-if="emails.length==10" class="col-7">
         <ul class="list-group">
           <li v-for="email in emails" class="list-group-item text-center">{{email}}</li>
         </ul>
