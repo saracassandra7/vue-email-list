@@ -18,10 +18,14 @@
   <div class="container m-3" id="app">
     <h2 class="text-center mb-3">Generatore di email</h2>
     <div class="row justify-content-center">
-      <div class="col-7">
+      <div v-if="isLoaded" class="col-7">
         <ul class="list-group">
           <li v-for="email in emails" class="list-group-item text-center">{{email}}</li>
         </ul>
+      </div>
+
+      <div v-else>
+        <div class="lds-ripple"><div></div><div></div></div>
       </div>
     </div>
       
